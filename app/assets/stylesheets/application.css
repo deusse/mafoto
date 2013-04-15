@@ -41,6 +41,7 @@ a:hover {
 ul.top_links {
 	list-style-type: none;
 	margin-left: 700px;
+	float: right;
 }
 ul.top_links li {
 	display: inline;
