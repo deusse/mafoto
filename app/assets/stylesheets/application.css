@@ -51,3 +51,13 @@ ul.top_links li {
 ul.top_links li a{
 	color: #fff;
 }
+/*----------- style the body ----------*/
+.container{
+	margin: 0 auto;
+	width: 850px;
+	background-color: #fff;
+	height: auto;
+	min-height: 500px;
+	padding: 5px 5px 5px 15px;
+	margin-top: 0;
+}
