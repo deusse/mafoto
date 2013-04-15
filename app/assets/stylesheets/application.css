@@ -11,3 +11,42 @@
  *= require_self
  *= require_tree .
  */
+body {
+	font-family: "Trebuchet Ms", sans-serif;
+	font-size: 12px;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*----------- style the logo ----------*/
+.header_logo {
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	font-style: italic;
+	font-family: "Trebuchet MS", sans-serif;
+}
+/*----------- style the top navigation header ----------*/
+.header {
+	width: 99%;
+	height: 50px;
+	background-color: #666666;
+	padding: 0px 5px 5px 5px;
+}
+/*----------- style the top navigation links ----------*/
+ul.top_links {
+	list-style-type: none;
+	margin-left: 700px;
+}
+ul.top_links li {
+	display: inline;
+	text-align: center;
+	margin-left: 30px;
+}
+ul.top_links li a{
+	color: #fff;
+}
