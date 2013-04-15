@@ -51,6 +51,10 @@ ul.top_links li {
 ul.top_links li a{
 	color: #fff;
 }
+/*----------- style the join button ----------*/
+.join_now {
+  
+}
 /*----------- style the body ----------*/
 .container{
 	margin: 0 auto;
