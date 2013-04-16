@@ -1,6 +1,8 @@
 Mafoto::Application.routes.draw do
   root :to => "main#index"
-  resources :photos
+  resources :photos do 
+    resources :comments
+  end 
 
   resources :groups
 

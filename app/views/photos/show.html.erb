@@ -8,6 +8,25 @@
 <p>
   <%= image_tag  @photo.picture.url %>
 </p>
+<h4>Comments</h4>
+<% @group.comments.each do |comment| %>
+	<%= time_ago_in_words(comment.created_at)%> ago<br />
+	<%= comment.user.name %> said:<br />
+	<%= comment.body %><br /><br />
+<% end %>
+
+<%= form_for [@photo, Comment.new] %>
+	<%= f.error_messages %>
+	<p>
+		<%= f.hidden_field :current_user, :value => current_user.id %>
+	</p>
+	<p>
+		<%= f.text_area :body, :rows => 10 %>
+	</p>
+	<p>
+		<%= f.submit "Add Comment" %>
+	</p>
+<% end %>
 
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |

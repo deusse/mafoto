@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :groups, :dependent => :destroy
   has_many :photos
+  has_many :comments
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
