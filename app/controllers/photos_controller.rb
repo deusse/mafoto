@@ -2,7 +2,7 @@ class PhotosController < ApplicationController
   # GET /photos
   # GET /photos.json
   def index
-    @photos = Photo.all
+    @photos = Photo.order("name").page(params[:page]).per(5)
 
     respond_to do |format|
       format.html # index.html.erb
