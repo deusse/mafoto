@@ -14,6 +14,6 @@ class Photo < ActiveRecord::Base
 
  	validates :picture, :attachment_presence => true,
  		:content_type => { :content_type => ["image/jpg", "image/png", "image/gif"] },
-  		:size => { :in => 0..1.megabytes }
+  		:size => { :in => 0..2.megabytes }
  	validates :name, :presence => true
 end
