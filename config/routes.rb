@@ -1,9 +1,11 @@
 Mafoto::Application.routes.draw do
+  root :to => "main#index"
+  resources :photos
+
   resources :groups
 
   devise_for :users
 
-  root :to => "main#index"
   get "main/index"
 
   get "main/about"

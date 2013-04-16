@@ -14,6 +14,7 @@ end
 gem 'devise'
 gem 'kaminari'
 gem 'paperclip'
+gem 'paperclip-dropbox'
 
 # Gems used only for assets and not required
 # in production environments by default.

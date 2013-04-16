@@ -8,6 +8,15 @@
   <%= @group.user.name %>
 </p>
 
+<p><%= link_to 'Add Photos', new_photo_path(:group_id => @group.id) %></p>
 
+<p>
+	<h4>Photos in this group</h4>
+	<% @group.photos.each do |photo| %>
+		<h5><%= photo.name %></h5>
+		<small><em>Uploaded by: <%= photo.user.name%></em></small><br /><br />
+		<%= image_tag photo.picture.url %><br /><br />
+	<% end %>
+</p>
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>
