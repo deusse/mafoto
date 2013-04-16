@@ -3,8 +3,9 @@ class Photo < ActiveRecord::Base
   belongs_to :group
   belongs_to :user
   has_many :comments
-  
+
   has_attached_file :picture,
+  	:styles => { :medium => "300x300>", :thumb => "100x100>" },
   	:storage => :dropbox,
   	:dropbox_credentials => "#{Rails.root}/config/dropbox_config.yml",
   	:dropbox_options => {       
