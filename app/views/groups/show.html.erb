@@ -16,6 +16,7 @@
 		<h5><%= photo.name %></h5>
 		<small><em>Uploaded by: <%= photo.user.name%></em></small><br /><br />
 		<%= image_tag photo.picture.url %><br /><br />
+		<%= link_to "Comment on photo", photo %>
 	<% end %>
 </p>
 <%= link_to 'Edit', edit_group_path(@group) %> |
