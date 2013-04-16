@@ -4,7 +4,7 @@
 <% @groups.each do |group| %>
     <%= link_to group.name, group %>
     <%= link_to 'Edit', edit_group_path(group) %> |
-    <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %><br ><br />
 <% end %>
 
 <br />
