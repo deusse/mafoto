@@ -12,8 +12,6 @@ class Photo < ActiveRecord::Base
 		:path => proc { |style| "#{style}/#{id}_#{picture.original_filename}"}, :unique_filename => true   
  	}
 
- 	validates :picture, :attachment_presence => true,
- 		:content_type => { :content_type => ["image/jpg", "image/png", "image/gif"] },
-  		:size => { :in => 0..2.megabytes }
+ 	validates :picture, :attachment_presence => true 
  	validates :name, :presence => true
 end
