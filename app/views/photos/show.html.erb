@@ -6,7 +6,7 @@
 <p>
 
 </p>
-<h4>Comments</h4>
+<h4><%= @photo.comments.size %></h4>
 <% if @photo.comments.nil? %>
 	<em>No comments yet!</em>
 <% else %>
