@@ -15,7 +15,7 @@
 	<% @group.photos.each do |photo| %>
 		<h5><%= photo.name %></h5>
 		<small><em>Uploaded by: <%= photo.user.name%></em></small><br /><br />
-		<%= image_tag photo.picture.url(:small) %><br /><br />
+		<%= image_tag photo.picture.url %><br /><br />
 		<%= link_to "Comment on photo", photo %>
 	<% end %>
 </p>
